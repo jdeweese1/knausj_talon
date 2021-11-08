@@ -1,4 +1,5 @@
 from talon import actions, Module, Context, app
+from talon.mac import applescript
 
 mod = Module()
 
@@ -10,3 +11,10 @@ class Actions:
           actions.key("play_pause")
         else:
           actions.key("play")
+
+    def media_set_volume(number:int):
+        '''
+        Sets volume
+        '''
+
+        applescript.run(f"""set volume {number/2}""")
