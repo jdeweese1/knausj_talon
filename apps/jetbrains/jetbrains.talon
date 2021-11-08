@@ -50,11 +50,11 @@ find (everywhere | all) <user.text> [over]:
     user.idea("action SearchEverywhere")
     sleep(500ms)
     insert(text)
-(search | find) class: user.idea("action GotoClass")
-(search | find) file: user.idea("action GotoFile")
-(search | find) path: user.idea("action FindInPath")
-(search | find) symbol: user.idea("action GotoSymbol")
-(search | find) symbol <user.text>$:
+(search | find | hunt) class: user.idea("action GotoClass")
+(search | find | hunt) file: user.idea("action GotoFile")
+(search | find| hunt) path: user.idea("action FindInPath")
+(search | find | hunt) symbol: user.idea("action GotoSymbol").
+(search | find | hunt) symbol <user.text>$:
     user.idea("action GotoSymbol")
     insert(text)
     key("enter")
