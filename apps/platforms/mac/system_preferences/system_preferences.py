@@ -4,6 +4,11 @@ from talon import Context, Module
 import os
 
 mod = Module()
+# mod.apps.system_preferences = '''
+# app.name: System Preferences
+# app.bundle com.apple.systempreferences'''
+# ctx = Context()
+# ctx.matches = "app: System Preferences";
 
 
 @mod.action_class
