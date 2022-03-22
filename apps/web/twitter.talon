@@ -1,6 +1,6 @@
 tag: browser
 browser.host: twitter.com
-#win.title: /Twitter/
+win.title: /Twitter/
 -
 
 # navigation
